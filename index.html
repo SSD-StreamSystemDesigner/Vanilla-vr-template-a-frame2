@@ -76,11 +76,9 @@
 
     <!-- Example 5: VR Hand Controller - SUPER HANDS  -->
     <a-scene>
-      <a-entity>
-        <a-camera></a-camera>
+
         <a-entity sphere-collider="objects: a-box" id="leftHand" super-hands hand-controls="hand: left"></a-entity>
         <a-entity sphere-collider="objects: a-box" id="rightHand" super-hands hand-controls="hand: right"></a-entity>
-      </a-entity>
       <!-- hover & drag-drop won't have any obvious effect without some additional event handlers or components. See the examples page for more -->
       <a-box grabbable color="yellow" position="0 1.5 -3"></a-box>
     </a-scene>
